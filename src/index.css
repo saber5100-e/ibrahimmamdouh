@@ -1,0 +1,144 @@
+.welcome-section {
+  text-align: center;
+  color: white;
+}
+
+.about-section {
+  margin: 22px 0;
+  padding: 20px;
+}
+
+.project {
+  margin: 5px 0;
+  padding: 20px;
+}
+
+.project-info p {
+  margin: 0;
+}
+
+.projects-section h2 {
+  padding: 20px;
+}
+
+.project .btn, .project h3 {
+  margin-top: 10px;
+}
+
+.content-form {
+  padding: 20px;
+}
+
+.content-form div input {
+  margin: 8px 0;
+}
+
+.content-form div textarea {
+  margin-top: 8px;
+}
+
+.submit {
+  margin: 12px;
+}
+
+footer p {
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  background-color: rgb(235, 235, 235);
+  text-align: center;
+  padding: 30px;
+}
+
+.nav-btn {
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.about-section,
+.projects-section,
+.contact-section {
+  min-height: 500px;
+}
+
+section {
+  background-color: rgb(235, 235, 235);
+}
+
+section:nth-child(even) {
+  background-color: white;
+}
+
+section {
+  display: flex;
+  align-items: center;
+}
+
+.welcome-img {
+  filter: grayscale(0.9) blur(2px);
+  position: relative;
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+.welcome-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+textarea {
+  resize: none;
+}
+
+.contact-section h2 {
+  padding: 16px;
+}
+
+.message {
+  padding: 16px;
+  border: 1px rgb(1 135 1) solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-transform: capitalize;
+  color: rgb(1 135 1);
+}
+
+.message-error {
+  border: 1px #e52c2c solid;
+  color: #e52c2c;
+}
+
+.message-close:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .welcome-img {  
+    min-width: 100%;
+    min-height: 50vh;
+  }
+  
+  .welcome-info {
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .about-section-info h2 {
+    padding: 8px 0;
+  }
+}
